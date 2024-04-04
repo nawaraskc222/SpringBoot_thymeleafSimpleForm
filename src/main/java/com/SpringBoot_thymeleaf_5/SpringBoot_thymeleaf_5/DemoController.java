@@ -20,7 +20,9 @@ return"index";
 @RequestMapping(value="/save", method=RequestMethod.POST)  
 public ModelAndView save(@ModelAttribute User user)
 {  
-ModelAndView modelAndView = new ModelAndView();  
+ModelAndView modelAndView = new ModelAndView(); 
+
+///user-data is user-data.html both are same
 modelAndView.setViewName("user-data");      
 modelAndView.addObject("user", user);    
 return modelAndView;  
